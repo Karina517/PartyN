@@ -15,8 +15,6 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.target.Target;
-
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     ArrayList<Party> data;
@@ -28,38 +26,33 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     }
 
-
     //Создается ViewHolder для каждого предмета в списке (только 1 раз)
     @NonNull
     @Override
     public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext())
-                .inflate(R.layout.item_party, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_party, parent, false);
         return new MyViewHolder(view);
-
     }
 
     //Соединяем данные с ViewHolder
     //Кладем данные во View
     @Override
-
     public void onBindViewHolder(@NonNull MyViewHolder holder, final int position) {
-
         holder.bind(data.get(position));
+
         Glide.with(mycontext).asBitmap().load(data.get(position).image).into(holder.partyIV);
+
         holder.layout.setOnClickListener(new View.OnClickListener() {
 
             @Override
-
             public void onClick(View view) {
-
                 Intent intent = new Intent(mycontext, ViewActivity.class);
+
                 intent.putExtra("party_name", data.get(position).name);
                 intent.putExtra("party_details", data.get(position).details);
                 intent.putExtra("party_imageURL", data.get(position).image);
                 mycontext.startActivity(intent);
-            }
-        });
+            }});
     }
 
     //Сколько предметов в списке
@@ -92,7 +85,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             partyIV = itemView.findViewById(R.id.imageV);
         }
 
-
         public void bind(Party party) {
             partyNameTV.setText(party.name);
             partyLocationTV.setText(party.adres);
@@ -101,11 +93,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
             partyDistTV.setText(party.dist);
         }
 
-
-        public Target partyIV() {
-            return null;
-
-        }
     }
 }
 

@@ -8,21 +8,21 @@
 
     <ImageView
         android:id="@+id/AVimage"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:scaleType="centerCrop"
+        android:layout_width="413dp"
+        android:layout_height="734dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/ic_launcher_background"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@color/colorPrimary" />
 
     <TextView
         android:id="@+id/AVname"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="200dp"
@@ -36,14 +36,12 @@
 
     <TextView
         android:id="@+id/AVdetails"
-        android:layout_width="wrap_content"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="32dp"
         android:layout_marginTop="14dp"
-        android:layout_marginEnd="24dp"
         android:text="Details "
         android:textColor="#000000"
-        app:layout_constraintEnd_toEndOf="@+id/AVimage"
         app:layout_constraintStart_toStartOf="@+id/AVimage"
         app:layout_constraintTop_toBottomOf="@+id/AVname" />
 
@@ -52,7 +50,7 @@
         android:layout_width="293dp"
         android:layout_height="36dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="100dp"
         android:background="#E91E63"
         android:singleLine="false"
         android:soundEffectsEnabled="false"
