@@ -64,14 +64,14 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="36dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="250dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
         android:adjustViewBounds="false"
-        app:layout_constraintEnd_toEndOf="@+id/AVimage"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/AVimage"
-        app:srcCompat="@android:drawable/ic_dialog_info" />
+        app:srcCompat="@drawable/more" />
 
     <ImageView
         android:id="@+id/imageView4"

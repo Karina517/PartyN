@@ -52,17 +52,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/name"
         app:layout_constraintTop_toBottomOf="@+id/imageV"
-        app:srcCompat="@android:drawable/ic_menu_info_details" />
+        app:srcCompat="@drawable/more" />
 
     <ImageView
         android:id="@+id/dataIV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="32dp"
+        android:layout_height="27dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="4dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/adres"
-        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+        app:srcCompat="@drawable/calendar" />
 
     <TextView
         android:id="@+id/data"
@@ -76,13 +76,13 @@
 
     <ImageView
         android:id="@+id/timeIV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="31dp"
+        android:layout_height="29dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toEndOf="@+id/dataIV"
         app:layout_constraintTop_toBottomOf="@+id/adres"
-        app:srcCompat="@android:drawable/ic_menu_recent_history" />
+        app:srcCompat="@drawable/clock" />
 
     <TextView
         android:id="@+id/time"
@@ -96,13 +96,13 @@
 
     <ImageView
         android:id="@+id/distIV"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="29dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="6dp"
         app:layout_constraintStart_toEndOf="@+id/timeIV"
         app:layout_constraintTop_toBottomOf="@+id/adres"
-        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+        app:srcCompat="@drawable/place" />
 
     <TextView
         android:id="@+id/dist"
